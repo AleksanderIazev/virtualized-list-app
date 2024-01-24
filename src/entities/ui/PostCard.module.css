@@ -1,0 +1,41 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 400px;
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: white;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 0 10px 10px rgba(49, 15, 15, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.postId {
+  margin: 0;
+  font-size: 18px;
+  color: #151414;
+}
+
+.postTitle {
+  margin: 0;
+}
+
+.postBody {
+  margin: 10px 0 0;
+  font-weight: 400;
+}
+
+.viewButton {
+  margin-top: 10px;
+  text-align: center;
+  width: 100px;
+}

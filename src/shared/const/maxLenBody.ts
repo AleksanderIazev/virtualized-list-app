@@ -1,0 +1,1 @@
+export const maxLenBody:number = 100; 
