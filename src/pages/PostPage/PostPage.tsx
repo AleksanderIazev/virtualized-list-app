@@ -1,29 +1,31 @@
 import { FC } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useFetchPostsQuery } from "../../entities";
+import { useFetchPostByIdQuery } from "../../entities";
 import { Button } from "../../shared/ui/Button/Button";
 import css from "./ui/PostPage.module.css";
+import { Spinner } from "../../shared/ui/Spinner/Spinner";
 
 export const PostPage: FC = () => {
   const { id } = useParams<{ id: any }>();
   const navigate = useNavigate();
-  const { data: posts } = useFetchPostsQuery();
+  const { data: posts, isLoading, isError } = useFetchPostByIdQuery(id);
 
-  const selectedPost = posts!.find((post) => post.id === parseInt(id, 10));
   const goBack = () => navigate(-1);
 
-  if (!selectedPost) {
-    return <div className={css.notFound}>Пост не найден</div>;
+  if (isLoading) {
+    return <Spinner />;
   }
 
-  const { title, body } = selectedPost;
+  if (isError) {
+    return <div className={css.notFound}>Пост не найден</div>;
+  }
 
   return (
     <div className={css.postContainer}>
       <h3 className={css.postHeader}>
-        {id} {title}
+        {id} {posts?.title}
       </h3>
-      <p className={css.postBody}>{body}</p>
+      <p className={css.postBody}>{posts?.body}</p>
       <Button onClick={goBack}>Назад</Button>
     </div>
   );
