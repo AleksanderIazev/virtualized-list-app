@@ -1,4 +1,4 @@
-import { baseApi } from "../../shared/api/baseApi";
+import { baseApi } from "../../../shared/api/baseApi";
 import { IPost } from "../model/types";
 
 export const postApi = baseApi.injectEndpoints({

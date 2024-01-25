@@ -25,7 +25,7 @@ export const Scroll: FC = () => {
       });
       setIsFetchingDown(false);
     }
-  }, [isMyFetchingDown]);
+  }, [isMyFetchingDown, isFetching]);
 
   useEffect(() => {
     if (isMyFetchingUp) {

@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { IPost } from "../model/types";
 import { Link } from "react-router-dom";
-import { shortText } from "../../shared/lib/shortText";
-import { Button } from "../../shared/ui/Button/Button";
+import { shortText } from "../../../shared/lib/shortText";
+import { Button } from "../../../shared/ui/Button/Button";
 import css from "../ui/PostCard.module.css";
 
 export const PostCard: FC<IPost> = ({ id, title, body }) => {
