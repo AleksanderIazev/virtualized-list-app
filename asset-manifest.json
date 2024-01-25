@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/virtualized-list-app/static/css/main.471541f7.css",
+    "main.js": "/virtualized-list-app/static/js/main.be113909.js",
+    "index.html": "/virtualized-list-app/index.html",
+    "main.471541f7.css.map": "/virtualized-list-app/static/css/main.471541f7.css.map",
+    "main.be113909.js.map": "/virtualized-list-app/static/js/main.be113909.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.471541f7.css",
+    "static/js/main.be113909.js"
+  ]
+}
