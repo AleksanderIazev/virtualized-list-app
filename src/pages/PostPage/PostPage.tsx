@@ -2,8 +2,8 @@ import { FC } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useFetchPostByIdQuery } from "../../entities";
 import { Button } from "../../shared/ui/Button/Button";
-import css from "./ui/PostPage.module.css";
 import { Spinner } from "../../shared/ui/Spinner/Spinner";
+import css from "./ui/PostPage.module.css";
 
 export const PostPage: FC = () => {
   const { id } = useParams<{ id: any }>();
