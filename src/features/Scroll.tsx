@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from "react";
-import { PostCard } from "../entities";
-import { useFetchPostsQuery } from "../entities";
+import { PostCard } from "../entities/post";
+import { useFetchPostsQuery } from "../entities/post";
 import { Spinner } from "../shared/ui/Spinner/Spinner";
 
 export const Scroll: FC = () => {

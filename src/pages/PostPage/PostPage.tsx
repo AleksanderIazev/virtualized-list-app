@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useFetchPostByIdQuery } from "../../entities";
+import { useFetchPostByIdQuery } from "../../entities/post";
 import { Button } from "../../shared/ui/Button/Button";
 import { Spinner } from "../../shared/ui/Spinner/Spinner";
 import css from "./ui/PostPage.module.css";
